@@ -170,7 +170,7 @@
     }
     #bemVindo {
         top: 30%;
-        width: 48%;
+        width: 45%;
         font-size: 100%;
     }
 
@@ -204,3 +204,10 @@
     }
 }
 
+/*Versão Mobile*/
+@media (max-width: 768px) {
+    /*Estilização dos nomes das abas*/
+    .nov_principal {
+        font-size: 20px;
+    }
+}
