@@ -10,3 +10,13 @@
     color: black;
     border-radius: 20%;
 }
+
+/*Versão Mobile*/
+@media (max-width: 850px) {
+    /*Estilização do Corpo do texto sobre nós*/
+    #sobre-nos-paragrafo {
+        padding: 15% 10% 20% 10%;
+        margin: 10% 10% 10% 10%;
+        font-size: 15px;
+    }
+}

@@ -209,5 +209,6 @@
     /*Estilização dos nomes das abas*/
     .nov_principal {
         font-size: 20px;
+        width: 25%;
     }
 }

@@ -10,6 +10,7 @@ section {
     color: black;
     font-size: 30px;
     text-align: center;
+    word-wrap: break-word;
 }
 
 .redes-sociais img {
@@ -50,4 +51,15 @@ form button:hover {
     background-color: rgb(125, 9, 69);
     color: white;
     border: 3px solid rgb(122, 211, 122);
+}
+
+
+/*Versão Mobile*/
+@media (max-width: 800px) {
+    /*Estilização da section dos contatos*/
+    section {
+        padding: 15% 10% 20% 10%;
+        margin: 10% 10% 10% 10%;
+        font-size: 15px;
+    }
 }
