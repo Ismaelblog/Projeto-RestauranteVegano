@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/styles-global.css">
     <link rel="stylesheet" href="/css/avaliacoes.css">
 </head>
+
 <body>
     <header>
         <!-- Logo do site -->
@@ -33,20 +34,49 @@
         <div>
             <h1 class="indicacaoPagina">AVALIAÇÕES</h1>
         </div>
-        <!--Conteúdo Provisório-->
+        
+        <!--Média de avaliações-->
+        <div id="media-avaliacoes" class="media-avaliacoes"></div>
+
+        <!--Lista de avaliações gerado pelo JS-->
+        <div id="lista-avaliacoes">
+            <!-- Avaliações aparecem aqui -->
+        </div>
+        
+        <!--Formulário de preenchimento para avaliação-->
         <section>
-            <p>Estou trabalhando nessa página!<br>EM BREVE IREI ATUALIZAR</p>
+            <form id="form-avaliacao">
+                <h2>Deixe sua avaliação</h2>
+                <input type="text" id="nome" placeholder="Seu nome (opcional)">
+                <select id="nota">
+                    <option value="5">⭐⭐⭐⭐⭐ (5)</option>
+                    <option value="4">⭐⭐⭐⭐ (4)</option>
+                    <option value="3">⭐⭐⭐ (3)</option>
+                    <option value="2">⭐⭐ (2)</option>
+                    <option value="1">⭐ (1)</option>
+                </select>
+                <textarea id="comentario" placeholder="Escreva seu comentário aqui..." required></textarea>
+                <button id="botao-form-aval" type="submit">Enviar Avaliação</button>
+            </form>
         </section>
+
     </main>
     <footer>
         <!--Rodapé com botão de voltar e Paragrafo.-->
-            <div class="footer-content">
-                <p id="footer-paragrafo">&copy 2025 Meu Restaurante Vegetariano<br><strong>Produzido por Ismael Fernandes</strong><br>Todos os direitos reservados.</p>
-                <button id="back-to-top">Voltar ao Topo</button>
-            </div>
-    
+        <div class="footer-content">
+            <p id="footer-paragrafo">&copy 2025 Meu Restaurante Vegano<br><strong>Produzido por Ismael
+                    Fernandes</strong><br>Todos os direitos reservados.</p>
+            <button id="back-to-top">Voltar ao Topo</button>
+        </div>
+
     </footer>
 
+    <!--Links para o JS e Banco de dados do Supabase-->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+    <script src="/js/supabase.js"></script>
     <script src="/js/avaliacoes.js"></script>
+
+
 </body>
+
 </html>
