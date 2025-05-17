@@ -1,9 +1,9 @@
 # 👩‍💻MEU PRIMEIRO PROJETO DE PORTFÓLIO👩‍💻
 
 
-# 🥗 EBAC Veggie
+# 🥗 EBAC Veggie - Restaurante Vegano
 
-**EBAC Veggie** é uma landing page de um restaurante vegano fictício, desenvolvida como parte do meu portfólio de desenvolvimento web e design. O projeto foi baseado em uma interface original de UI/UX criada por mim, com foco em estética moderna, responsividade e navegação clara.
+**EBAC Veggie** é um site de um restaurante vegano fictício, desenvolvida como parte do meu portfólio de desenvolvimento web e design. O projeto foi baseado em uma interface original de UI/UX criada por mim durante uma Jornada realizada pela EBAC - Escola Britânica de Artes Criativas & Tecnologia, com foco em estética moderna, responsividade e navegação clara.
 
 ---
 
