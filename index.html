@@ -1,112 +1,153 @@
 <!DOCTYPE html>
 <html lang="pt=BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EBAC Veggie</title>
-    <link rel="icon" href="/imagens/EBACVeggie.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/styles-global.css">
-    <link rel="stylesheet" href="/css/styles.css">
-</head>
+    <link rel="icon" href="/imagens/EBACVeggie.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/styles-global.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <!-- Logo do site -->
-        <a href="/"><img id="Logo" src="imagens/EBACVeggie.png" alt="Logo do site"></a>
-        <!--Carrinho-->
-        <button class="carrinho-button">CARRINHO (0)</button>
-        <!--Menu-->
-        <div class="menu">
-            <button class="menu-button">MENU</button>
-            <ul class="menu-dropdown">
-                <li id="primeiraLinha"><a href="/">MENU</a></li>
-                <li><a href="/cardapio.html">CARDÁPIO</a></li>
-                <li><a href="/meus-pedidos.html">MEUS PEDIDOS</a></li>
-                <li><a href="/contatos.html">CONTATOS</a></li>
-                <li><a href="/avaliacoes.html">AVALIAÇÕES</a></li>
-                <li id="ultimaLinha"><a href="/sobre-nos.html">SOBRE NÓS</a></li>
-            </ul>
-        </div>
+      <a href="/"
+        ><img id="Logo" src="imagens/EBACVeggie.png" alt="Logo do site"
+      /></a>
+      <!--Menu-->
+      <div class="menu">
+        <button class="menu-button">MENU</button>
+        <ul class="menu-dropdown">
+          <li id="primeiraLinha"><a href="/">MENU</a></li>
+          <li><a href="/cardapio.html">CARDÁPIO</a></li>
+          <li><a href="/meus-pedidos.html">MEUS PEDIDOS</a></li>
+          <li><a href="/contatos.html">CONTATOS</a></li>
+          <li><a href="/avaliacoes.html">AVALIAÇÕES</a></li>
+          <li id="ultimaLinha"><a href="/sobre-nos.html">SOBRE NÓS</a></li>
+        </ul>
+      </div>
     </header>
     <main>
-        <!--Conteúdo do Bem-vindo-->
-        <div class="image-container">
-            <img id="inicioIMG" src="/imagens/inicio.png" alt="Anuncio de inicio">
-            <h1 id="bemVindo">SEJA<br>BEM-VINDO</h1>
+      <!--Conteúdo do Bem-vindo-->
+      <div class="image-container">
+        <img id="inicioIMG" src="/imagens/inicio.png" alt="Anuncio de inicio" />
+        <h1 id="bemVindo">SEJA<br />BEM-VINDO</h1>
+      </div>
+      <!--Aba Novidades(Conteiners)-->
+      <div>
+        <h1 class="nov_principal">NOVIDADES</h1>
+        <div class="imagens-container">
+          <div class="imagem-item">
+            <a href="#"
+              ><img src="/imagens/conteiners/item1.png" alt="imagem do item1" />
+              <div class="legenda">Torta Romeu & Julieta</div></a
+            >
+          </div>
+          <div class="imagem-item">
+            <a href="#"
+              ><img src="/imagens/conteiners/item2.png" alt="imagem do item2" />
+              <div class="legenda">
+                Tortelli de Alcachofra<br />ao Pomodoro
+              </div></a
+            >
+          </div>
+          <div class="imagem-item">
+            <a href="#"
+              ><img src="/imagens/conteiners/item3.png" alt="imagem do item3" />
+              <div class="legenda">Kombuchopeira</div></a
+            >
+          </div>
+          <div class="imagem-item">
+            <a href="#"
+              ><img src="/imagens/conteiners/item4.png" alt="imagem do item4" />
+              <div class="legenda">Cappuccino Ganache<br />de Chocolate</div></a
+            >
+          </div>
+          <div class="imagem-item">
+            <a href="#"
+              ><img src="/imagens/conteiners/item5.png" alt="imagem do item5" />
+              <div class="legenda">Brûlée de Pipoca</div></a
+            >
+          </div>
+          <div class="imagem-item">
+            <a href="#"
+              ><img src="/imagens/conteiners/item6.png" alt="imagem do item6" />
+              <div class="legenda">Salada Harmonia</div></a
+            >
+          </div>
         </div>
-        <!--Aba Novidades(Conteiners)-->
-        <div>
-            <h1 class="nov_principal">NOVIDADES</h1>
-            <div class="imagens-container">
-                <div class="imagem-item">
-                    <a href="#"><img src="/imagens/conteiners/item1.png" alt="imagem do item1">
-                    <div class="legenda">Torta Romeu & Julieta</div></a>
-                </div>
-                <div class="imagem-item">
-                    <a href="#"><img src="/imagens/conteiners/item2.png" alt="imagem do item2">
-                    <div class="legenda">Tortelli de Alcachofra<br>ao Pomodoro</div></a>
-                </div>
-                <div class="imagem-item">
-                    <a href="#"><img src="/imagens/conteiners/item3.png" alt="imagem do item3">
-                    <div class="legenda">Kombuchopeira</div></a>
-                </div>
-                <div class="imagem-item">
-                    <a href="#"><img src="/imagens/conteiners/item4.png" alt="imagem do item4">
-                    <div class="legenda">Cappuccino Ganache<br>de Chocolate</div></a>
-                </div>
-                <div class="imagem-item">
-                    <a href="#"><img src="/imagens/conteiners/item5.png" alt="imagem do item5">
-                    <div class="legenda">Brûlée de Pipoca</div></a>
-                </div>
-                <div class="imagem-item">
-                    <a href="#"><img src="/imagens/conteiners/item6.png" alt="imagem do item6">
-                    <div class="legenda">Salada Harmonia</div></a>
-                </div>
+      </div>
+      <!--Anúncio do Restaurante-->
+      <div>
+        <img
+          id="anuncioRestaurante"
+          src="/imagens/AnuncioRestaurante.png"
+          alt="Anúncio do Restaurante"
+        />
+      </div>
+      <!--Carrosséis de imagens-->
+      <div>
+        <h1 class="nov_principal">PRATOS PRINCIPAIS</h1>
+        <!--Conteiners do Carrosséis-->
+        <div class="carousel-container">
+          <div class="carousel-slide">
+            <a href="#"
+              ><div class="legendaPrincipal">Flor de Abobrinha</div></a
+            >
+            <img
+              src="/imagens/carouselSlides/slide1.png"
+              alt="Prato Principal1"
+            />
+            <a href="#"><div class="legendaPrincipal">Salada Harmonia</div></a>
+            <img
+              src="/imagens/carouselSlides/slide2.png"
+              alt="Prato Principal2"
+            />
+            <a href="#"
+              ><div class="legendaPrincipal">Feijoada Vegana Completa</div></a
+            >
+            <img
+              src="/imagens/carouselSlides/slide3.png"
+              alt="Prato Principal3"
+            />
+            <a href="#"
+              ><div class="legendaPrincipal">
+                Risoto Vermelho com Shitake
+              </div></a
+            >
+            <img
+              src="/imagens/carouselSlides/slide4.png"
+              alt="Prato Principal4"
+            />
+          </div>
+          <a class="carousel-control prev">&#10094;</a>
+          <a class="carousel-control next">&#10095;</a>
+        </div>
+        <!--Imagem da Versão Mobile-->
+        <div class="carousel-mobile">
+          <a href="#">
+            <div class="carousel-mobile-content">
+              <img
+                src="/imagens/carouselSlides/ImagemMobile.jpg"
+                alt="Prato Principal Mobile"
+              />
             </div>
+          </a>
         </div>
-        <!--Anúncio do Restaurante-->
-        <div>
-            <img id="anuncioRestaurante" src="/imagens/AnuncioRestaurante.png" alt="Anúncio do Restaurante">
-        </div>
-        <!--Carrosséis de imagens-->
-        <div>
-            <h1 class="nov_principal">PRATOS PRINCIPAIS</h1>
-            <!--Conteiners do Carrosséis-->
-            <div class="carousel-container">
-                <div class="carousel-slide">
-                       <a href="#"><div class="legendaPrincipal">Flor de Abobrinha</div></a> 
-                    <img src="/imagens/carouselSlides/slide1.png" alt="Prato Principal1">
-                       <a href="#"><div class="legendaPrincipal">Salada Harmonia</div></a>
-                    <img src="/imagens/carouselSlides/slide2.png" alt="Prato Principal2">
-                       <a href="#"><div class="legendaPrincipal">Feijoada Vegana Completa</div></a>
-                    <img src="/imagens/carouselSlides/slide3.png" alt="Prato Principal3">
-                       <a href="#"><div class="legendaPrincipal">Risoto Vermelho com Shitake</div></a>
-                    <img src="/imagens/carouselSlides/slide4.png" alt="Prato Principal4">  
-                </div>
-                <a class="carousel-control prev">&#10094;</a>
-                <a class="carousel-control next">&#10095;</a>
-            </div>
-            <!--Imagem da Versão Mobile-->
-            <div class="carousel-mobile">
-                <a href="#">
-                    <div class="carousel-mobile-content">
-                        <img src="/imagens/carouselSlides/ImagemMobile.jpg" alt="Prato Principal Mobile">
-                    </div>
-                </a> 
-            </div>
-        </div>
-    </main>    
+      </div>
+    </main>
     <footer>
-        <!--Rodapé com botão de voltar e Paragrafo.-->
-            <div class="footer-content">
-                <p id="footer-paragrafo">&copy 2025 Meu Restaurante Vegano<br><strong>Produzido por Ismael Fernandes</strong><br>Todos os direitos reservados.</p>
-                <button id="back-to-top">Voltar ao Topo</button>
-            </div>
-    
+      <!--Rodapé com botão de voltar e Paragrafo.-->
+      <div class="footer-content">
+        <p id="footer-paragrafo">
+          &copy 2025 Meu Restaurante Vegano<br /><strong
+            >Produzido por Ismael Fernandes</strong
+          ><br />Todos os direitos reservados.
+        </p>
+        <button id="back-to-top">Voltar ao Topo</button>
+      </div>
     </footer>
 
-  <script src="/js/script.js"></script>
-</body>
-
+    <script src="/js/script.js"></script>
+  </body>
 </html>

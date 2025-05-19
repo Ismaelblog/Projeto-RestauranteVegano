@@ -1,269 +1,399 @@
 /*Estilização do Body & header.*/
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 #Logo {
-    width: 70px;
-    margin: 10px 10px 10px 10px;
-    box-shadow: 0px 0px 5px rgba(125, 9, 69, 0.6);
-    border: 2px solid rgb(122, 211, 122);
-    border-radius: 5px;
+  width: 70px;
+  margin: 10px 10px 10px 10px;
+  box-shadow: 0px 0px 5px rgba(125, 9, 69, 0.6);
+  border: 2px solid rgb(122, 211, 122);
+  border-radius: 5px;
 }
 
 header {
-    display: flex;
-    padding: 0 10px;
-    background-color: rgb(122, 211, 122);
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  padding: 0 10px;
+  background-color: rgb(122, 211, 122);
+  justify-content: space-between;
+  align-items: center;
 }
 
-
-/*Estilização do Menu e Aba header*/
+/*Estilização do Botão Menu e Lista do Menu*/
 .menu {
-    position: relative;
-    display: inline-block;
-    z-index: 10;
+  position: relative;
+  display: inline-block;
+  z-index: 10;
+  margin-left: 20px;
 }
 
 .menu-button {
-    background-color: rgb(125, 9, 69);
-    color: white;
-    padding: 20px 90px;
-    margin: 0px 30px;
-    border: 2px solid rgb(122, 211, 122);
-    border-bottom: 0px;
-    border-radius: 100px 100px 0px 0px;
-    cursor: pointer;
-    box-shadow: 0px 0px 5px rgba(125, 9, 69, 0.6);
-    font-size: 20px;
-    font-weight: bold;
-    position: relative;
-    display: inline-block;
+  background-color: rgb(125, 9, 69);
+  color: white;
+  padding: 20px 90px;
+  margin: 0px 30px;
+  border: 2px solid rgb(122, 211, 122);
+  border-bottom: 0px;
+  border-radius: 100px 100px 0px 0px;
+  cursor: pointer;
+  box-shadow: 0px 0px 5px rgba(125, 9, 69, 0.6);
+  font-size: 20px;
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
 }
 
 .menu-button:hover {
-    background-color: rgba(125, 9, 69, 0.6);
-    color: rgb(122, 211, 122);
-    border: 4px solid rgb(125, 9, 69);
-    font-weight: bold;
-    border-radius: 100px 100px 0px 0px;
+  background-color: rgba(125, 9, 69, 0.6);
+  color: rgb(122, 211, 122);
+  border: 4px solid rgb(125, 9, 69);
+  font-weight: bold;
+  border-radius: 100px 100px 0px 0px;
 }
 
 .menu-dropdown {
-    visibility: hidden;
-    position: absolute;
-    background-color: rgb(125, 9, 69);
-    min-width: 700px;
-    z-index: 5;
-    right: 0;
-    list-style: none;
-    padding: 0px;
-    margin: 0px 30px 10px 10px;
-    border-radius: 60px 0px 60px 60px;
-    transform: translateX(-10%);
-    opacity: 0;
-    transition: opacity 0.9s, transform 0.5s ease;
-    border: 2px solid rgb(122, 211, 122);
+  visibility: hidden;
+  position: absolute;
+  background-color: rgb(125, 9, 69);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  min-width: 700px;
+  z-index: 5;
+  right: 0;
+  list-style: none;
+  padding: 0px;
+  margin: 0px 30px 10px 10px;
+  border-radius: 60px 0px 60px 60px;
+  transform: translateX(-10%);
+  opacity: 0;
+  transition: opacity 0.9s, transform 0.5s ease;
+  border: 2px solid rgb(122, 211, 122);
 }
 
 .menu-dropdown a {
-    color: white;
-    padding: 30px 16px;
-    text-decoration: none;
-    text-align: center;
-    display: block;
-    font-size: 35px;
-    border-bottom: 1px solid rgb(122, 211, 122);
+  color: white;
+  padding: 30px 16px;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  font-size: 35px;
+  border-bottom: 1px solid rgb(122, 211, 122);
 }
 
-#primeiraLinha :first-child {  /*Inicio do efeito de linha do Menu*/
-    border-top: none;
+#primeiraLinha :first-child {
+  /*Inicio do efeito de linha do Menu*/
+  border-top: none;
 }
 
-#primeiraLinha:hover{
-    border-top: 3px solid rgb(122, 211, 122);
-    border-radius: 100px;
+#primeiraLinha:hover {
+  border-top: 3px solid rgb(122, 211, 122);
+  border-radius: 100px;
 }
 
-#ultimaLinha:hover{
-    border-bottom: 3px solid rgb(122, 211, 122);
-    border-radius: 100px;
+#ultimaLinha:hover {
+  border-bottom: 3px solid rgb(122, 211, 122);
+  border-radius: 100px;
 }
 
-#ultimaLinha :last-child {  /*Final do efeito de linha do Menu*/
-    border-bottom: none;
+#ultimaLinha :last-child {
+  /*Final do efeito de linha do Menu*/
+  border-bottom: none;
 }
 
 .menu-dropdown a:hover {
-    background-color: rgb(122, 211, 122, 0.4);
-    color: rgb(122, 211, 122);
-    border: 6px double rgb(125, 9, 69);
-    border-radius: 100px;
-    border-bottom: 3px solid rgb(122, 211, 122);
-    border-top: 3px solid rgb(122, 211, 122);
+  background-color: rgb(122, 211, 122, 0.4);
+  color: rgb(122, 211, 122);
+  border: 6px double rgb(125, 9, 69);
+  border-radius: 100px;
+  border-bottom: 3px solid rgb(122, 211, 122);
+  border-top: 3px solid rgb(122, 211, 122);
 }
 
 .menu .show {
-    display: block;
-    z-index: 9;
+  display: block;
+  z-index: 9;
 }
 
 .show {
-    visibility: visible;
-    opacity: 1;
-    transform: translateX(0);
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(0);
 }
 
+/*Estilização do Botão Carrinho e Lista do Carrinho*/
 .carrinho-button {
-    background-color: rgb(125, 9, 69);
-    color: white;
-    padding: 20px 60px;
-    border: 2px solid rgb(122, 211, 122);
-    border-bottom: 0px;
-    margin-left: auto;
-    border-radius: 100px 100px 0px 0px;
-    cursor: pointer;
-    box-shadow: 0px 0px 5px rgba(125, 9, 69, 0.6);
-    font-size: 20px;
-    font-weight: bold;
+  position: relative;
+  background-color: rgb(125, 9, 69);
+  color: white;
+  padding: 20px 60px;
+  border: 2px solid rgb(122, 211, 122);
+  border-bottom: 0px;
+  margin-left: auto;
+  border-radius: 100px 100px 0px 0px;
+  cursor: pointer;
+  box-shadow: 0px 0px 5px rgba(125, 9, 69, 0.6);
+  font-size: 20px;
+  font-weight: bold;
 }
-
 .carrinho-button:hover {
-    background-color: rgba(125, 9, 69, 0.6);
-    color: rgb(122, 211, 122);
-    border: 4px solid rgb(125, 9, 69);
-    font-weight: bold;
-    border-radius: 100px 100px 0px 0px;
+  background-color: rgba(125, 9, 69, 0.6);
+  color: rgb(122, 211, 122);
+  border: 4px solid rgb(125, 9, 69);
+  font-weight: bold;
+  border-radius: 100px 100px 0px 0px;
 }
 
+#carrinho-quantidade {
+  background-color: #f44336;
+  color: white;
+  border-radius: 50%;
+  padding: 0.3em 0.6em;
+  font-size: 0.9em;
+  position: absolute;
+  top: -0.1em;
+  right: 1em;
+  margin-left: 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  transform: scale(1);
+  transition: transform 0.2s ease-in-out;
+}
+#carrinho-quantidade:hover {
+  transform: scale(1.2);
+}
+
+.carrinho-aba {
+  visibility: hidden;
+  opacity: 0;
+  transform: translateX(100%);
+  position: fixed;
+  top: 80px;
+  right: 0;
+  width: 450px;
+  height: 83%;
+  background-color: rgba(125, 9, 69, 0.9);
+  border: 2px solid rgb(122, 211, 122);
+  border-radius: 60px 0px 0px 60px;
+  box-shadow: -4px 0 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  padding: 20px;
+  font-size: 18px;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out,
+    visibility 0.3s ease-in-out;
+  overflow-y: auto;
+}
+.carrinho-aba.show {
+  transform: translateX(0%);
+  opacity: 1;
+  visibility: visible;
+}
+.carrinho-aba h3 {
+  color: rgb(125, 9, 69);
+  background-color: rgb(122, 211, 122);
+  padding: 5px;
+  margin: 5px 30px 5px 30px;
+  border-radius: 50px;
+  text-align: center;
+  box-shadow: inset 1px 1px 10px 1px rgb(0, 0, 0, 2.5);
+}
+.carrinho-aba ul {
+  list-style: none;
+  padding: 0;
+}
+.carrinho-aba li {
+  margin-bottom: 10px;
+
+  padding-bottom: 5px;
+}
+
+#lista-carrinho li {
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(122, 211, 122);
+  box-shadow: inset 0px -8px 10px 1px rgb(0, 0, 0, 0.5);
+  color: black;
+}
+#lista-carrinho button {
+  padding: 5px 5px;
+  margin: 5px 100px;
+  float: right;
+  font-size: 13px;
+  background-color: rgba(125, 9, 69, 0.8);
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#lista-carrinho button:hover {
+  background-color: red;
+  color: black;
+}
+
+#total-carrinho {
+  text-align: center;
+  font-size: 18px;
+  background-color: rgba(125, 9, 69, 0.8);
+  border: 1px solid rgb(122, 211, 122);
+  border-radius: 5px;
+  padding: 10px;
+  font-weight: bold;
+  margin-top: 20px;
+  color: white;
+}
+
+#finalizar-pedido {
+  background-color: rgb(125, 9, 69);
+  color: white;
+  border: 3px solid rgb(122, 211, 122);
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 50px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+#finalizar-pedido:hover {
+  background-color: rgb(122, 211, 122);
+  color: black;
+}
+
+/*Estilização do Main*/
 main {
-    min-height: 100vh;
+  min-height: 100vh;
 }
-
 
 /*Aba do Footer*/
 footer {
-    background: radial-gradient(circle, rgb(125, 9, 69), rgb(122, 211, 122) );
-    color: white;
-    padding: 40px;
-    text-align: center;
-    margin-top: 150px;
-    border-top: 10px solid rgb(122, 211, 122);
+  background: radial-gradient(circle, rgb(125, 9, 69), rgb(122, 211, 122));
+  color: white;
+  padding: 40px;
+  text-align: center;
+  margin-top: 150px;
+  border-top: 10px solid rgb(122, 211, 122);
 }
 
 .footer-content {
-    max-width: 800px;
-    margin: 0 auto;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 #footer-paragrafo {
-    font-size: 15px;
-    color: white;
+  font-size: 15px;
+  color: white;
 }
 
 #back-to-top {
-    background-color: rgb(125, 9, 69);
-    color: #fff;
-    border: 1px solid rgb(122, 211, 122);
-    padding: 10px 40px;
-    cursor: pointer;
-    border-radius: 5px;
-    margin-top: 10px;
-    font-size: 15px;
+  background-color: rgb(125, 9, 69);
+  color: #fff;
+  border: 1px solid rgb(122, 211, 122);
+  padding: 10px 40px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-size: 15px;
 }
 
 #back-to-top:hover {
-    background-color: rgb(125, 9, 69);
-    border: 6px groove rgb(122, 211, 122);
-    color: rgb(122, 211, 122);
-    font-weight: bold;
-    border-radius: 10px;
+  background-color: rgb(125, 9, 69);
+  border: 6px groove rgb(122, 211, 122);
+  color: rgb(122, 211, 122);
+  font-weight: bold;
+  border-radius: 10px;
 }
-
 
 /*Aba de indicação de página*/
 .indicacaoPagina {
-    margin: 10% 20% 0% 20%;
-    padding: 2%;
-    background-color: rgb(122, 211, 122);
-    border: 3px solid rgb(125, 9, 69);
-    border-radius: 90px 90px 90px 90px;
-    box-shadow: inset 5px 5px 25px 5px rgb(0, 0, 0, 2.5);
-    color: black;
-    font-size: 40px;
-    text-align: center;
+  margin: 10% 20% 0% 20%;
+  padding: 2%;
+  background-color: rgb(122, 211, 122);
+  border: 3px solid rgb(125, 9, 69);
+  border-radius: 90px 90px 90px 90px;
+  box-shadow: inset 5px 5px 25px 5px rgb(0, 0, 0, 2.5);
+  color: black;
+  font-size: 40px;
+  text-align: center;
 }
-
 
 /*Versão Mobile*/
 @media (max-width: 1050px) {
-    /*Estilização do Menu*/
-    .menu-dropdown {
-        min-width: 100%;
-    }
-    .menu-dropdown a {
-        padding: 20px 16px;
-        font-size: 30px;
-    }
+  /*Estilização do Menu*/
+  .menu-dropdown {
+    min-width: 100%;
+  }
+  .menu-dropdown a {
+    padding: 20px 16px;
+    font-size: 30px;
+  }
 }
-
 
 /*Versão Mobile*/
 @media (max-width: 768px) {
-    /*Estilização dos Botões Menu e Carrinho*/
-    .menu-button {
-        display: flex;
-        width: 100%;
-        margin: 20px 30px 20px 0px;
-        max-width: 90%;
-        font-size: 10px;
-        padding: 20%;
-        justify-content: center;
-    }
-    .carrinho-button {
-        padding: 2% 5%;
-        border-radius: 50px 50px 50px 50px;
-        border: 2px solid rgb(122, 211, 122);
-        margin-left: auto;
-        margin-right: 5%;
-        font-size: 10px;
-    }
-    .carrinho-button:hover {
-        border-radius: 50px 50px 50px 50px;
-    }
+  /*Estilização dos Botões Menu e Carrinho*/
+  .menu-button {
+    display: flex;
+    width: 100%;
+    margin: 20px 30px 20px 0px;
+    max-width: 90%;
+    font-size: 10px;
+    padding: 20%;
+    justify-content: center;
+  }
+  .carrinho-button {
+    padding: 1% 5%;
+    border-radius: 50px 50px 50px 50px;
+    border: 2px solid rgb(122, 211, 122);
+    font-size: 10px;
+  }
+  .carrinho-button:hover {
+    border-radius: 50px 50px 50px 50px;
+  }
+  #carrinho-quantidade {
+    top: -0.6em;
+    right: -0.3em;
+  }
 
-    /*Estilização do Menu*/
-    .menu-dropdown a {
-        padding: 20px 16px;
-        font-size: 20px;
-    }
-    .menu-dropdown {
-        right: -10px;
-        margin: -20px 15px 10px 10px;
-    }
+  /*Estilização do Menu Carrinho*/
+  .carrinho-aba {
+    top: 70px;
+    width: 300px;
+    height: 80%;
+    font-size: 15px;
+  }
 
-    /*Estilização das indicações das páginas*/
-    .indicacaoPagina {
-        font-size: 25px;
-        box-shadow: inset 2px 2px 20px 2px rgb(0, 0, 0, 2.5);
-    }
+  /*Estilização do Menu*/
+  .menu-dropdown a {
+    padding: 20px 16px;
+    font-size: 20px;
+  }
+  .menu-dropdown {
+    right: -10px;
+    margin: -20px 15px 10px 10px;
+  }
 
-    /*Estilização do logo para versão mobile*/
-    #Logo {
-        width: 50px;
-        margin: 10px 10px 10px 10px;
-    }
-    
-    /*Estilização do footer*/
-    footer {
-        padding: 10px;
-        padding-bottom: 40px;
-        margin-top: 80px;
-        border-top: 5px solid rgb(122, 211, 122);
-    }
+  /*Estilização das indicações das páginas*/
+  .indicacaoPagina {
+    font-size: 25px;
+    box-shadow: inset 2px 2px 20px 2px rgb(0, 0, 0, 2.5);
+  }
+
+  /*Estilização do logo para versão mobile*/
+  #Logo {
+    width: 50px;
+    margin: 10px 10px 10px 10px;
+  }
+
+  /*Estilização do footer*/
+  footer {
+    padding: 10px;
+    padding-bottom: 40px;
+    margin-top: 80px;
+    border-top: 5px solid rgb(122, 211, 122);
+  }
 }

@@ -1,82 +1,83 @@
 <!DOCTYPE html>
 <html lang="pt=BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EBAC Veggie</title>
-    <link rel="icon" href="/imagens/EBACVeggie.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/styles-global.css">
-    <link rel="stylesheet" href="/css/avaliacoes.css">
-</head>
+    <link rel="icon" href="/imagens/EBACVeggie.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/styles-global.css" />
+    <link rel="stylesheet" href="/css/avaliacoes.css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <!-- Logo do site -->
-        <a href="/"><img id="Logo" src="imagens/EBACVeggie.png" alt="Logo do site"></a>
-        <!--Carrinho-->
-        <button class="carrinho-button">CARRINHO (0)</button>
-        <!--Menu-->
-        <div class="menu">
-            <button class="menu-button">MENU</button>
-            <ul class="menu-dropdown">
-                <li id="primeiraLinha"><a href="/">MENU</a></li>
-                <li><a href="/cardapio.html">CARDÁPIO</a></li>
-                <li><a href="/meus-pedidos.html">MEUS PEDIDOS</a></li>
-                <li><a href="/contatos.html">CONTATOS</a></li>
-                <li><a href="/avaliacoes.html">AVALIAÇÕES</a></li>
-                <li id="ultimaLinha"><a href="/sobre-nos.html">SOBRE NÓS</a></li>
-            </ul>
-        </div>
+      <!-- Logo do site -->
+      <a href="/"
+        ><img id="Logo" src="imagens/EBACVeggie.png" alt="Logo do site"
+      /></a>
+      <!--Menu-->
+      <div class="menu">
+        <button class="menu-button">MENU</button>
+        <ul class="menu-dropdown">
+          <li id="primeiraLinha"><a href="/">MENU</a></li>
+          <li><a href="/cardapio.html">CARDÁPIO</a></li>
+          <li><a href="/meus-pedidos.html">MEUS PEDIDOS</a></li>
+          <li><a href="/contatos.html">CONTATOS</a></li>
+          <li><a href="/avaliacoes.html">AVALIAÇÕES</a></li>
+          <li id="ultimaLinha"><a href="/sobre-nos.html">SOBRE NÓS</a></li>
+        </ul>
+      </div>
     </header>
     <main>
-        <!--Conteúdo do Bem-vindo-->
-        <div>
-            <h1 class="indicacaoPagina">AVALIAÇÕES</h1>
-        </div>
-        
-        <!--Média de avaliações-->
-        <div id="media-avaliacoes" class="media-avaliacoes"></div>
+      <!--Conteúdo do Bem-vindo-->
+      <div>
+        <h1 class="indicacaoPagina">AVALIAÇÕES</h1>
+      </div>
 
-        <!--Lista de avaliações gerado pelo JS-->
-        <div id="lista-avaliacoes">
-            <!-- Avaliações aparecem aqui -->
-        </div>
-        
-        <!--Formulário de preenchimento para avaliação-->
-        <section>
-            <form id="form-avaliacao">
-                <h2>Deixe sua avaliação</h2>
-                <input type="text" id="nome" placeholder="Seu nome (opcional)">
-                <select id="nota">
-                    <option value="5">⭐⭐⭐⭐⭐ (5)</option>
-                    <option value="4">⭐⭐⭐⭐ (4)</option>
-                    <option value="3">⭐⭐⭐ (3)</option>
-                    <option value="2">⭐⭐ (2)</option>
-                    <option value="1">⭐ (1)</option>
-                </select>
-                <textarea id="comentario" placeholder="Escreva seu comentário aqui..." required></textarea>
-                <button id="botao-form-aval" type="submit">Enviar Avaliação</button>
-            </form>
-        </section>
+      <!--Média de avaliações-->
+      <div id="media-avaliacoes" class="media-avaliacoes"></div>
 
+      <!--Lista de avaliações gerado pelo JS-->
+      <div id="lista-avaliacoes">
+        <!-- Avaliações aparecem aqui -->
+      </div>
+
+      <!--Formulário de preenchimento para avaliação-->
+      <section>
+        <form id="form-avaliacao">
+          <h2>Deixe sua avaliação</h2>
+          <input type="text" id="nome" placeholder="Seu nome (opcional)" />
+          <select id="nota">
+            <option value="5">⭐⭐⭐⭐⭐ (5)</option>
+            <option value="4">⭐⭐⭐⭐ (4)</option>
+            <option value="3">⭐⭐⭐ (3)</option>
+            <option value="2">⭐⭐ (2)</option>
+            <option value="1">⭐ (1)</option>
+          </select>
+          <textarea
+            id="comentario"
+            placeholder="Escreva seu comentário aqui..."
+            required
+          ></textarea>
+          <button id="botao-form-aval" type="submit">Enviar Avaliação</button>
+        </form>
+      </section>
     </main>
     <footer>
-        <!--Rodapé com botão de voltar e Paragrafo.-->
-        <div class="footer-content">
-            <p id="footer-paragrafo">&copy 2025 Meu Restaurante Vegano<br><strong>Produzido por Ismael
-                    Fernandes</strong><br>Todos os direitos reservados.</p>
-            <button id="back-to-top">Voltar ao Topo</button>
-        </div>
-
+      <!--Rodapé com botão de voltar e Paragrafo.-->
+      <div class="footer-content">
+        <p id="footer-paragrafo">
+          &copy 2025 Meu Restaurante Vegano<br /><strong
+            >Produzido por Ismael Fernandes</strong
+          ><br />Todos os direitos reservados.
+        </p>
+        <button id="back-to-top">Voltar ao Topo</button>
+      </div>
     </footer>
 
     <!--Links para o JS e Banco de dados do Supabase-->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
     <script src="/js/supabase.js"></script>
     <script src="/js/avaliacoes.js"></script>
-
-
-</body>
-
+  </body>
 </html>

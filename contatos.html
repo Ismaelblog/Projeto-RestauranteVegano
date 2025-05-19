@@ -1,78 +1,100 @@
 <!DOCTYPE html>
 <html lang="pt=BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EBAC Veggie</title>
-    <link rel="icon" href="/imagens/EBACVeggie.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/styles-global.css">
-    <link rel="stylesheet" href="/css/contatos.css">
-</head>
-<body>
+    <link rel="icon" href="/imagens/EBACVeggie.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/styles-global.css" />
+    <link rel="stylesheet" href="/css/contatos.css" />
+  </head>
+  <body>
     <header>
-        <!-- Logo do site -->
-        <a href="/"><img id="Logo" src="imagens/EBACVeggie.png" alt="Logo do site"></a>
-        <!--Carrinho-->
-        <button class="carrinho-button">CARRINHO (0)</button>
-        <!--Menu-->
-        <div class="menu">
-            <button class="menu-button">MENU</button>
-            <ul class="menu-dropdown">
-                <li id="primeiraLinha"><a href="/">MENU</a></li>
-                <li><a href="/cardapio.html">CARDÁPIO</a></li>
-                <li><a href="/meus-pedidos.html">MEUS PEDIDOS</a></li>
-                <li><a href="/contatos.html">CONTATOS</a></li>
-                <li><a href="/avaliacoes.html">AVALIAÇÕES</a></li>
-                <li id="ultimaLinha"><a href="/sobre-nos.html">SOBRE NÓS</a></li>
-            </ul>
-        </div>
+      <!-- Logo do site -->
+      <a href="/"
+        ><img id="Logo" src="imagens/EBACVeggie.png" alt="Logo do site"
+      /></a>
+      <!--Menu-->
+      <div class="menu">
+        <button class="menu-button">MENU</button>
+        <ul class="menu-dropdown">
+          <li id="primeiraLinha"><a href="/">MENU</a></li>
+          <li><a href="/cardapio.html">CARDÁPIO</a></li>
+          <li><a href="/meus-pedidos.html">MEUS PEDIDOS</a></li>
+          <li><a href="/contatos.html">CONTATOS</a></li>
+          <li><a href="/avaliacoes.html">AVALIAÇÕES</a></li>
+          <li id="ultimaLinha"><a href="/sobre-nos.html">SOBRE NÓS</a></li>
+        </ul>
+      </div>
     </header>
     <main>
-        <!--Conteúdo do inicio-->
-        <div>
-            <h1 class="indicacaoPagina">CONTATOS</h1>
+      <!--Conteúdo do inicio-->
+      <div>
+        <h1 class="indicacaoPagina">CONTATOS</h1>
+      </div>
+      <!--Informações de Contatos-->
+      <section>
+        <h2>Informações de Contatos</h2>
+        <p>
+          <strong>Endereço:</strong> Rua das palmeiras, 148 - Centro - São
+          Paulo, SP
+        </p>
+        <p><strong>Telefone:</strong> (11) 1234-5678</p>
+        <p><strong>E-mail:</strong> contato@ebacveggie.com.br</p>
+        <p>
+          <strong>Horário de Funcionamento:</strong> Sexta a Domingo, das 10h às
+          00h.
+        </p>
+        <div class="redes-sociais">
+          <a href="http://www.facebook.com" target="_blank"
+            ><img
+              src="https://img.icons8.com/fluency/48/facebook.png"
+              alt="facebook"
+          /></a>
+          <a href="http://www.instagram.com" target="_blank"
+            ><img
+              src="https://img.icons8.com/fluency/48/instagram-new.png"
+              alt="instagram"
+          /></a>
+          <a href="http://www.linkedin.com" target="_blank"
+            ><img
+              src="https://img.icons8.com/fluency/48/linkedin.png"
+              alt="linkedin"
+          /></a>
         </div>
-        <!--Informações de Contatos-->
-        <section>
-            <h2>Informações de Contatos</h2>
-            <p><strong>Endereço:</strong> Rua das palmeiras, 148 - Centro - São Paulo, SP</p>
-            <p><strong>Telefone:</strong> (11) 1234-5678</p>
-            <p><strong>E-mail:</strong> contato@ebacveggie.com.br</p>
-            <p><strong>Horário de Funcionamento:</strong> Sexta a Domingo, das 10h às 00h.</p>
-            <div class="redes-sociais">
-                <a href="#"><img src="/imagens/EBACVeggie.png" alt="Facebook"></a>
-                <a href="#"><img src="/imagens/EBACVeggie.png" alt="Instagram"></a></div>
-        </section>
-        <!--Entrar em Contato-->
-        <section>
-            <h2>Entre em Contato</h2>
-            <form id="contato-form">
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required>
+      </section>
+      <!--Entrar em Contato-->
+      <section>
+        <h2>Entre em Contato</h2>
+        <form id="contato-form">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" required />
 
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="assunto">Assunto:</label>
-                <input type="text" id="assunto" name="assunto" required>
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" required />
 
-                <label for="mensagem">Mensagem:</label>
-                <textarea id="mensagem" name="mensagem" required></textarea>
+          <label for="assunto">Assunto:</label>
+          <input type="text" id="assunto" name="assunto" required />
 
-                <button type="submit">ENVIAR</button>
-            </form>
-        </section>
+          <label for="mensagem">Mensagem:</label>
+          <textarea id="mensagem" name="mensagem" required></textarea>
+
+          <button type="submit">ENVIAR</button>
+        </form>
+      </section>
     </main>
     <footer>
-        <!--Rodapé com botão de voltar e Paragrafo.-->
-            <div class="footer-content">
-                <p id="footer-paragrafo">&copy 2025 Meu Restaurante Vegano<br><strong>Produzido por Ismael Fernandes</strong><br>Todos os direitos reservados.</p>
-                <button id="back-to-top">Voltar ao Topo</button>
-            </div>
-    
+      <!--Rodapé com botão de voltar e Paragrafo.-->
+      <div class="footer-content">
+        <p id="footer-paragrafo">
+          &copy 2025 Meu Restaurante Vegano<br /><strong
+            >Produzido por Ismael Fernandes</strong
+          ><br />Todos os direitos reservados.
+        </p>
+        <button id="back-to-top">Voltar ao Topo</button>
+      </div>
     </footer>
 
-    <script src="/js/cardapio.js"></script>
-</body>
+    <script src="js/avaliacoes.js" defer></script>
+  </body>
 </html>
