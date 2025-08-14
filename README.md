@@ -23,9 +23,8 @@ O Case contém:
 
 ---
 
-## 🚀 Demonstração
-![Trabalhando nisso](https://media1.tenor.com/m/_D2I43cDZPYAAAAd/pera-algorand.gif)\
-🔗 Aguarde...
+## 🚀 Deploy
+[🌐 Deploy do Site](https://ebac-veggie.vercel.app/)
 
 ---
 
@@ -34,6 +33,7 @@ O Case contém:
 - HTML5
 - CSS3
 - JavaScript
+- Supabase
 - Git e GitHub
 
 ---
